@@ -16,6 +16,9 @@ for x in question_data:
     
 
 quiz_brain1 = QuizBrain(question_bank)
-quiz_brain1.next_question()
 
-print(question_bank[1],answer)
+#loop until the questions finsish
+while quiz_brain1.still_has_questions:
+      quiz_brain1.next_question()
+
+print("questions over")
